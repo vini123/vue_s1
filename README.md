@@ -11,7 +11,7 @@ npm run dev
 ```
 # 目录以及效果图
 
-``` js
+``` 
 .
 ├── build                                       // webpack配置文件
 │   ├── webpack.config.base.js                  // 基础配置，比如一些固定插件。多条件打包时，也可以用上。
@@ -22,7 +22,7 @@ npm run dev
 │   ├── index.html                              // 入口 html
 │   └── index.js                                // 入口 js
 │ 
-└──  dist                                       // 输出文件
+├──  dist                                       // 输出文件
 │ 
 └──  package.json                               //node 配置
 
