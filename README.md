@@ -51,11 +51,8 @@ npm install --save-dev webpack
 ```
 {
   ……
-  "license": "ISC",
+  "license": "ISC",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-preset-es2015": "^6.24.1",
     "clean-webpack-plugin": "^0.1.17",
     "css-loader": "^0.28.7",
     "html-webpack-plugin": "^2.30.1",
@@ -76,9 +73,6 @@ npm install --save-dev webpack-merge
 
 // 安装 html-webpack-plugin (组装html和js)
 npm install --save-dev html-webpack-plugin
-
-// 安装 babel （处理js）
-npm install --save-dev babel-core babel-loader babel-preset-es2015
 
 // 安装 css-loader （处理css）
 npm install --save-dev css-loader
@@ -103,11 +97,15 @@ npm install --save-dev clean-webpack-plugin
 
 ``` js
 // webpack.config.base.js 公用配置
+
 const CleanPlugin = require('clean-webpack-plugin')
+
 const webpack = require('webpack')
+
 const path = require('path')
 
 module.exports = {
+
 	plugins:[
 
 		// 匹配删除的文件
@@ -140,7 +138,6 @@ const path = require('path')
 const merge = require('webpack-merge')
 
 const BaseWebpackConfig = require('./webpack.config.base.js')
-
 
 module.exports = merge(BaseWebpackConfig, {
 
