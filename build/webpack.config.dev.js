@@ -4,15 +4,18 @@ const path = require('path')
 
 const merge = require('webpack-merge')
 
-var BaseWebpackConfig = require('./webpack.config.base.js')
+const BaseWebpackConfig = require('./webpack.config.base.js')
 
 
 module.exports = merge(BaseWebpackConfig, {
+
 		entry:'./src/index.js',
+
 		output:{
 			path: path.resolve(__dirname, '../dist'),
 			filename:'./style/js/[name]-[hash].bundle.js'
 		},
+
 		module:{
 			rules:[
 				{
@@ -23,6 +26,7 @@ module.exports = merge(BaseWebpackConfig, {
 				}
 			]
 		},
+
 		plugins:[
 			new HtmlPlugin({
 				filename:'home.html',
