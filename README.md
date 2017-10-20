@@ -36,8 +36,8 @@ npm run dev
 ### 建立目录，初始化，安装webpack
 
 ``` js
-mkdir vuestudy_s1
-cd vuestudy_s1
+mkdir vue_s1
+cd vue_s1
 // 创建默认node配置 -y 跳过手动输入
 npm init -y 
 // 安装 webpack
