@@ -191,6 +191,8 @@ module.exports = merge(BaseWebpackConfig, {
 
 ### .vue 文件
 
+**.vue 单文件组件** [https://cn.vuejs.org/v2/guide/single-file-components.html](https://cn.vuejs.org/v2/guide/single-file-components.html)
+
 ``` js
 // ./src/App.vue
 
