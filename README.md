@@ -1,5 +1,3 @@
-# vuestudy_s1
-
 # 使用
 
 ``` js
