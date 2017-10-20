@@ -260,12 +260,23 @@ new Vue({
 	render:h => h(App)
 })
 ```
+vue 的**render**函数是渲染一个视图，然后提供给**el**挂载，如果没有**render**那页面什么都不会出来。
+
+vue.2.0的渲染过程：
+
+1. 首先需要了解这是 es 6 的语法，表示 Vue 实例选项对象的 render 方法作为一个函数，接受传入的参数 h 函数，返回 h(App) 的函数调用结果。
+
+2. 其次，Vue 在创建 Vue 实例时，通过调用 render 方法来渲染实例的 DOM 树。
+
+3. 最后，Vue 在调用 render 方法时，会传入一个 createElement 函数作为参数，也就是这里的 h 的实参是 createElement 函数，然后 createElement 会以 APP 为参数进行调用。
+
+[https://cn.vuejs.org/v2/guide/render-function.html](https://cn.vuejs.org/v2/guide/render-function.html)
 
 ### 修改 package.json 开始打包
 
 修改 **package.json** 的 **scripts** 节点，添加一条命令。
 
-```
+``` js
 "scripts": {
     ……
     "dev": "webpack --config ./build/webpack.config.dev.js"
